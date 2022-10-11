@@ -88,7 +88,7 @@ sudo git clone https://github.com/NatronGitHub/Natron && cd Natron
 sudo git submodule update -i --recursive
 wget https://github.com/NatronGitHub/OpenColorIO-Configs/archive/Natron-v2.5.tar.gz
 sudo tar xzf Natron-v2.5.tar.gz
-mv OpenColorIO-Configs-Natron-v2.5 OpenColorIO-Configs
+sudo mv OpenColorIO-Configs-Natron-v2.5 OpenColorIO-Configs
 
 pause "   >>>  Por favor, pulsa ${txtgrn}[ENTER] para CONTINUAR${txtrst} o ${txtred}[CTRL+C] para CANCELAR${txtrst} ..."
 clear
@@ -105,9 +105,9 @@ echo "  "
 echo "  "
 sleep 1
 
-echo "boost-serialization-lib: LIBS += -lboost_serialization" > config.pri
-mkdir build && cd build
-qmake -r ../Project.pro CONFIG+=python3
-make -j8
+sudo echo "boost-serialization-lib: LIBS += -lboost_serialization" > config.pri
+sudo mkdir build && cd build
+sudo qmake -r ../Project.pro CONFIG+=python3
+sudo make -j8
 
 
