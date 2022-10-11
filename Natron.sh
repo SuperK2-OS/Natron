@@ -87,7 +87,7 @@ sleep 1
 sudo git clone https://github.com/NatronGitHub/Natron && cd Natron
 sudo git submodule update -i --recursive
 wget https://github.com/NatronGitHub/OpenColorIO-Configs/archive/Natron-v2.5.tar.gz
-tar xzf Natron-v2.5.tar.gz
+sudo tar xzf Natron-v2.5.tar.gz
 mv OpenColorIO-Configs-Natron-v2.5 OpenColorIO-Configs
 
 pause "   >>>  Por favor, pulsa ${txtgrn}[ENTER] para CONTINUAR${txtrst} o ${txtred}[CTRL+C] para CANCELAR${txtrst} ..."
